@@ -1,3 +1,12 @@
+.logo-login {
+  display: flex;
+  margin-top: 3.58rem;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
 .center-login {
   margin-top: 7.063rem;
 }
