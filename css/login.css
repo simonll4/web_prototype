@@ -1,0 +1,55 @@
+.center-login {
+  margin-top: 7.063rem;
+}
+
+.bg-inicio {
+  background: #fff;
+}
+
+.bg-user {
+  border-radius: 0.625rem;
+  background: #303f9f33;
+  height: 3.125rem;
+}
+
+.bg-pass {
+  border-radius: 0.625rem;
+  background: #f7f7f7;
+  height: 3.125rem;
+}
+
+.btn-login {
+  background: #311b92;
+  border-radius: 0.625rem;
+  margin-top: 3.75rem;
+  transition: background-color 0.3s ease;
+}
+.btn-login:hover {
+  background: #311bcd;
+}
+
+.text-1 {
+  text-align: end;
+  margin-top: 1;
+}
+
+.text-2 {
+  text-align: center;
+  margin-top: 1.313rem;
+}
+
+.form {
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  top: calc(50% - 0.5rem);
+  left: 1rem;
+}
+
+.form input,
+.form-floating .form-control {
+  left: 0.5rem;
+  padding-left: 3rem;
+}
