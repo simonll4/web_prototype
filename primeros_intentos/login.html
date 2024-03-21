@@ -12,33 +12,33 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body class="d-flex align-items-center bg-inicio">
     <!-- ------------------------------------------------------------------------------ -->
-
-    <!-- logo empresa -->
-    <img
-      src="images/Logo-login.png"
-      alt=""
-      class="img-login img-fluid mx-auto d-block"
-    />
-
-    <!-- login -->
-    <section id="login">
-      <div class="container">
-        <div class="row login">
-          <div class="col sm-6 md-6 mx-auto">
-            <form action="login.html">
-              <div class="form-group mb-2">
-                <img src="images/user-icon.svg" alt="" class="icon" />
+    <div class="container-fluid mt-5">
+      <!-- row 1 -->
+      <div class="row">
+        <div class="col logo-login">
+          <img src="images/Logo-login.png" />
+        </div>
+      </div>
+      <!-- row 2 -->
+      <div class="row center-login">
+        <div class="col">
+          <main class="form-signin">
+            <form>
+              <!-- USER -->
+              <div class="form mb-2">
+                <i class="icon fa-regular fa-user"></i>
                 <input
                   type="email"
-                  class="form-control bg-user-email"
+                  class="form-control bg-user"
                   id="useremail"
                   placeholder="Usuario"
                 />
               </div>
-              <div class="form-group">
-                <img src="images/pass-icon.svg" alt="" class="icon" />
+              <!-- PASSWORD -->
+              <div class="form">
+                <i class="icon fa-regular fa-envelope"></i>
                 <input
                   type="password"
                   class="form-control bg-pass"
@@ -49,19 +49,17 @@
               </div>
               <p class="text-1">Olvidaste tu contraseña?</p>
               <button
-                type="submit"
                 class="btn btn-primary btn-login w-100 py-2"
+                type="submit"
               >
-                Iniciar sesión
+                <span class="text-white">Iniciar Sesion</span>
               </button>
             </form>
-            <p class="text-2">
-              No tenes una cuenta? - <span class="text-3">Registrate</span>
-            </p>
-          </div>
+            <p class="text-2">No tenes cuenta? - <b>Registrate</b></p>
+          </main>
         </div>
       </div>
-    </section>
+    </div>
 
     <!-- ------------------------------------------------------------------------------ -->
     <script

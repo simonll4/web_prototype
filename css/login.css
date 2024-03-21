@@ -1,19 +1,12 @@
-.logo-login {
-  display: flex;
+.img-login {
   margin-top: 3.58rem;
-  justify-content: center;
-  align-items: center;
 }
 
-.center-login {
+.login {
   margin-top: 7.063rem;
 }
 
-.bg-inicio {
-  background: #fff;
-}
-
-.bg-user {
+.bg-user-email {
   border-radius: 0.625rem;
   background: #303f9f33;
   height: 3.125rem;
@@ -23,6 +16,26 @@
   border-radius: 0.625rem;
   background: #f7f7f7;
   height: 3.125rem;
+}
+
+.icon {
+  position: absolute;
+  top: calc(50% - 0.8rem);
+  left: 0.5rem;
+}
+
+.form-group {
+  position: relative;
+}
+
+.form-group .form-control {
+  left: 0.5rem;
+  padding-left: 3rem;
+}
+
+.text-1 {
+  text-align: end;
+  margin-top: 1;
 }
 
 .btn-login {
@@ -35,28 +48,17 @@
   background: #311bcd;
 }
 
-.text-1 {
-  text-align: end;
-  margin-top: 1;
-}
-
 .text-2 {
   text-align: center;
   margin-top: 1.313rem;
 }
 
-.form {
-  position: relative;
-}
-
-.icon {
-  position: absolute;
-  top: calc(50% - 0.5rem);
-  left: 1rem;
-}
-
-.form input,
-.form-floating .form-control {
-  left: 0.5rem;
-  padding-left: 3rem;
+.text-3 {
+  color: #1c1939cc;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Lato;
+  font-size: 0.938rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.563rem;
 }
