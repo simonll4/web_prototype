@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
+    <title>Wibond</title>
     <!-- ------------------------------------------------------------------------------ -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/transferir1.css" />
@@ -11,79 +11,99 @@
       src="https://kit.fontawesome.com/6d3ed19a44.js"
       crossorigin="anonymous"
     ></script>
-    <!-- ------------------------------------------------------------------------------ -->
   </head>
-  <body class="d-flex align-items-center bg-inicio">
+
+  <body>
     <!-- ------------------------------------------------------------------------------ -->
-
-    <div class="container-fluid">
-      <!-- ------------------------------------------------------------------------------------- -->
-      <div class="row">
-        <div class="col col-sm-3">
-          <div class="p-3"><img src="images/flecha.svg" /></div>
-        </div>
-        <div class="col col-sm-3"></div>
-        <div class="col col-sm-3 wibond-logo">
-          <img src="images/Logo-transferencia.png" />
-        </div>
-        <div class="col col-sm-3 wibond-img">
-          <img src="images/W I B O N D.png" />
-        </div>
-      </div>
-      <!-- ------------------------------------------------------------------------------------- -->
-      <hr class="m-0" />
-      <!-- ------------------------------------------------------------------------------------- -->
-      <div class="row">
-        <span class="text-transfer">Transferirir dinero</span>
-      </div>
-      <div class="row">
-        <div class="card card-available-money">
-          <div card></div>
-          <div class="card-header">
-            <h5 class="card-title">Dinero disponible</h5>
+    <nav class="navbar navbar-expand-sm p-0">
+      <div class="container p-0">
+        <div class="row w-100">
+          <div class="col col-sm-3">
+            <div class="p-3"><img src="images/flecha.svg" /></div>
           </div>
-          <div class="card-body">
-            <p class="card-text">ARS $ 1.236,00</p>
+          <div class="col col-sm-3"></div>
+          <div class="col col-sm-3 wibond-logo">
+            <img src="images/Logo-transferencia.png" />
+          </div>
+          <div class="col col-sm-3 wibond-img">
+            <img src="images/W I B O N D.png" />
           </div>
         </div>
       </div>
-      <!-- --------------------------------------------------------------------------------------------- -->
-      <ul class="list-group mt-1">
-        <li class="list-group-item box-title-group-list">
-          <h1 class="text-title-group-list">Tipo de destino</h1>
-        </li>
-        <li class="list-group-item box">
-          <input
-            class="form-check-input m-0"
-            type="radio"
-            name="listGroupRadio"
-            value=""
-            id="firstRadio"
-            checked
-          />
-          <label class="form-check-label text-destination" for="firstRadio"
-            >Destinatario único</label
-          >
-        </li>
+    </nav>
 
-        <li class="list-group-item box">
-          <input
-            class="form-check-input m-0"
-            type="radio"
-            name="listGroupRadio"
-            value=""
-            id="thirdRadio"
-          />
-          <label class="form-check-label text-destination" for="thirdRadio"
-            >Múltiples destinatarios</label
-          >
-        </li>
-      </ul>
-      <!-- --------------------------------------------------------------------------------------------- -->
-      <div class="row">
-        <div class="btn btn-next"><span class="text-next">Siguiente</span></div>
+    <hr class="m-0" />
+
+    <div class="container">
+      <div class="row sm-6 mx-auto">
+        <div class="text-transfer">
+          <span >Transferirir dinero</span>
+        </div>
       </div>
-    </div>
+    </div>    
+
+    <section id="availablemoney">
+      <div class="container">
+        <div class="row sm-6 mx-auto">
+          <div class="col">
+            <div class="card card-available-money">
+              <div card></div>
+              <div class="card-header">
+                <h5 class="card-title">Dinero disponible</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">ARS $ 1.236,00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    
+    <!-- --------------------------------------------------------------------------------------------- -->
+    <section id="check-box">
+      <div class="container mt-2">
+        <div class="row sm-6 mx-auto">
+          <div class="col">
+            <ul class="list-group mt-1">
+              <li class="list-group-item box-title-group-list">
+                <h1 class="text-title-group-list">Tipo de destino</h1>
+              </li>
+              <li class="list-group-item box">
+                <input
+                  class="form-check-input m-0"
+                  type="radio"
+                  name="listGroupRadio"
+                  value=""
+                  id="firstRadio"
+                />
+                <label class="form-check-label text-addressee" for="firstRadio"
+                  >Destinatario único</label
+                >
+              </li>
+
+              <li class="list-group-item box">
+                <input
+                  class="form-check-input m-0"
+                  type="radio"
+                  name="listGroupRadio"
+                  value=""
+                  id="thirdRadio"
+                />
+                <label class="form-check-label text-addressee" for="thirdRadio"
+                  >Múltiples destinatarios</label
+                >
+              </li>
+            </ul>
+          </div>
+          </div>
+          <div class="row sm-6 mx-auto">
+            <div class="col ">
+              <div class="btn btn-primary btn-next"><span class="text-next">Siguiente</span></div>
+            </div>
+          </div>
+      </div>
+        
+    </section>
 
     <!-- ------------------------------------------------------------------------------ -->
     <script
