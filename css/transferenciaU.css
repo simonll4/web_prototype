@@ -1,0 +1,243 @@
+.wibond-img {
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-left: 0rem;
+  margin-left: 0rem;
+}
+
+.wibond-logo {
+  padding-top: 0rem;
+  padding-right: 0.2rem;
+  margin-right: 0rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+/* transferir dinero */
+#heading {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+#section {
+  background: white;
+  border: 0 none;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding-bottom: 20px;
+  /*stacking fieldsets above each other*/
+  position: relative;
+}
+
+/*Hide all except first fieldset*/
+#main section:not(:first-of-type) {
+  display: none;
+}
+
+#next-btn:hover {
+  background: #311bff;
+}
+
+/*The background card*/
+.card {
+  z-index: 0;
+  border: none;
+  position: relative;
+}
+
+/*Icon progressbar*/
+#progressbar {
+  margin-bottom: 1.875rem;
+  overflow: hidden;
+  color: lightgrey;
+}
+
+#progressbar .active {
+  color: #673ab7;
+}
+
+#progressbar li {
+  list-style-type: none;
+  font-size: 0.938rem;
+  width: 6.5rem;
+  float: left;
+  position: relative;
+  font-weight: 400;
+}
+
+/*Icons in the ProgressBar*/
+#progressbar #first:before {
+  font-family: FontAwesome;
+  content: "\f304";
+}
+
+#progressbar #second:before {
+  font-family: FontAwesome;
+  content: "\f141";
+}
+
+#progressbar #third:before {
+  font-family: FontAwesome;
+  content: "\f141";
+}
+
+/*Icon ProgressBar before any progress*/
+#progressbar li:before {
+  width: 50px;
+  height: 50px;
+  line-height: 45px;
+  display: block;
+  font-size: 20px;
+  color: #ffffff;
+  background: lightgray;
+  border-radius: 50%;
+  margin: 0 auto 10px auto;
+  padding: 2px;
+}
+
+/*ProgressBar connectors*/
+#progressbar li:after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: lightgray;
+  position: absolute;
+  left: 1;
+  top: 25px;
+  z-index: -1;
+}
+/* Ocultar la línea del tercer elemento */
+#progressbar li:nth-child(3):after {
+  display: none;
+}
+
+/*Color number of the step and the connector before it*/
+#progressbar li.active:before {
+  background: #507cdd;
+}
+
+/*Animated Progress Bar*/
+.progress {
+  height: 20px;
+}
+
+.progress-bar {
+  background-color: #02bc8a;
+}
+
+/*Fit image in bootstrap div*/
+.fit-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-available-money {
+  width: 19.438rem;
+  height: 6rem;
+  border-radius: 0.625rem;
+  background: #5252ff;
+}
+
+.card-title {
+  color: #fff;
+  font-family: Lato;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  z-index: 5;
+}
+
+.card-text {
+  color: #fff;
+  font-family: Lato;
+  font-size: 1.563rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  z-index: 5;
+}
+
+.box-title-group-list {
+  width: 19.438rem;
+  height: 2.563rem;
+  border-radius: 0.625rem 0.625rem 0rem 0rem;
+  background: #1f1f1f;
+}
+
+.text-title-group-list {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.box {
+  width: 19.438rem;
+  height: 4rem;
+  flex: content;
+  justify-content: center;
+}
+
+.text {
+  color: #4d4d4d;
+  font-family: Montserrat;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 0.5rem;
+}
+
+.form-group {
+  position: relative;
+}
+
+.form-group .form-control {
+  left: 0.5rem;
+  padding-left: 3rem;
+}
+
+.bg-user-email {
+  border-radius: 0.625rem;
+  background: #303f9f33;
+  height: 3.125rem;
+}
+
+.icon {
+  position: absolute;
+  top: calc(50% - 0.8rem);
+  left: 0.5rem;
+}
+
+/*Next Buttons*/
+#main #next-btn-1 {
+  margin-top: 17.188rem;
+  width: 17.813rem;
+  height: 3.209rem;
+  border-radius: 0.535rem;
+  background: #311b92;
+}
+
+#next-btn-1:hover {
+  background: #311bff;
+}
+
+.next-text {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 0.909rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
