@@ -38,7 +38,19 @@
 }
 
 /*Hide all except first fieldset*/
-#main section:not(:first-of-type) {
+/* #main section:not(:first-of-type) {
+  display: none;
+} */
+
+#section1 {
+  display: none;
+}
+
+#section2 {
+  display: none;
+}
+
+#section3 {
   display: none;
 }
 
@@ -241,3 +253,46 @@
   font-weight: 700;
   line-height: normal;
 }
+
+/* SECTION 2 */
+.card-available-money-2 {
+  width: 19.438rem;
+  height: 12.563rem;
+  flex-shrink: 0;
+  border-radius: 0.625rem;
+  background: #5252ff;
+}
+
+.text-impuesto-1 {
+  text-align: start;
+  justify-content: center;
+  padding: 0.72rem;
+}
+.text-impuesto-2 {
+  text-align: end;
+  justify-content: end;
+  padding: 0.75rem;
+}
+
+/* SECTION 3 */
+
+.heading-3 {
+  color: #4d4d4d;
+  font-family: Montserrat;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.contact {
+  height: 29px;
+  width: 29px;
+  border-radius: 50%;
+  background-color: #7165e3;
+}
+
+
+/* SECTION 4 */
+
+
