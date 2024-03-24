@@ -25,34 +25,24 @@
   text-transform: capitalize;
 }
 
-#section {
-  background: white;
-  border: 0 none;
-  border-radius: 0.5rem;
-  box-sizing: border-box;
-  width: 100%;
-  margin: 0;
-  padding-bottom: 20px;
-  /*stacking fieldsets above each other*/
-  position: relative;
-}
+
 
 /*Hide all except first fieldset*/
-/* #main section:not(:first-of-type) {
+#main section:not(:first-of-type) {
+  display: none;
+}
+
+/* #section1 {
   display: none;
 } */
 
-#section1 {
+#section2 {
   display: none;
 }
 
-#section2 {
+#section3 {
   display: none;
 } 
-
-/* #section3 {
-  display: none;
-}  */
 
 #section4 {
   display: none;
@@ -79,7 +69,7 @@
 #progressbar li {
   list-style-type: none;
   font-size: 0.938rem;
-  width: 6.5rem;
+  width: 6.3rem;
   float: left;
   position: relative;
   font-weight: 400;
@@ -105,14 +95,14 @@
 #progressbar li:before {
   width: 3.125rem;
   height: 3.125rem;
-  line-height: 45px;
+  line-height: 2.813rem;
   display: block;
   font-size: 1.25rem;
   color: #ffffff;
   background: lightgray;
   border-radius: 50%;
   margin: 0 auto 0.625rem auto;
-  padding: 2px;
+  padding: 0.125rem;
 }
 
 /*ProgressBar connectors*/
@@ -174,7 +164,7 @@
   z-index: 5;
 }
 
-.card-header{
+.card-header {
   border: none;
 }
 
@@ -242,13 +232,14 @@
   left: 0.5rem;
 }
 
-/*Next Buttons*/
-#main #next-btn-1{
-  margin-top: 8rem;
+/*Next Button*/
+#main #next-btn-1 {
   width: 17.813rem;
   height: 3.209rem;
   border-radius: 0.535rem;
   background: #311b92;
+  position: fixed;
+  bottom: 1.916rem;
 }
 
 #next-btn-1:hover {
@@ -270,13 +261,13 @@
   height: 12.3;
   flex-shrink: 0;
   border-radius: 0.625rem;
-  background: #5252FF;
+  background: #5252ff;
 }
 
-#amount{
+#amount {
   height: 3.375rem;
   width: 12.75rem;
-  background-color: #5252FF;
+  background-color: #5252ff;
   color: #fff;
   border-radius: 5%;
   font-size: 2.813rem;
@@ -284,7 +275,7 @@
   outline: none;
 }
 
-#labelamount{
+#labelamount {
   color: #fff;
   font-size: 2.813rem;
 }
@@ -316,4 +307,8 @@
   width: 1.813rem;
   border-radius: 50%;
   background-color: #7165e3;
+}
+
+li::marker {
+  content: "";
 }
