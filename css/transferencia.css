@@ -27,7 +27,7 @@
 
 .card-available-money {
   margin-top: 2.25rem;
-  width: 19.438rem;
+  width: 19rem;
   height: 6rem;
   border-radius: 0.625rem;
   background: #5252ff;
@@ -54,7 +54,7 @@
 }
 
 .box-title-group-list {
-  width: 19.438rem;
+  width: 19rem;
   height: 2.563rem;
   border-radius: 0.625rem 0.625rem 0rem 0rem;
   background: #1f1f1f;
@@ -70,7 +70,7 @@
 }
 
 .box {
-  width: 19.438rem;
+  width: 19rem;
   height: 4rem;
 }
 
@@ -85,7 +85,7 @@
 }
 
 #next-btn{
-  margin-top: 17.188rem;
+  margin-top: 8rem;
   width: 17.813rem;
   height: 3.209rem;
   border-radius: 0.535rem;
