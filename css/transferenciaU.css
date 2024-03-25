@@ -15,7 +15,7 @@
 }
 
 /* transferir dinero */
-#heading {
+.heading {
   color: #000;
   font-family: Montserrat;
   font-size: 1.25rem;
@@ -25,16 +25,14 @@
   text-transform: capitalize;
 }
 
-
-
 /*Hide all except first fieldset*/
-#main section:not(:first-of-type) {
-  display: none;
-}
-
-/* #section1 {
+/* #main section:not(:first-of-type) {
   display: none;
 } */
+
+#section1 {
+  display: block;
+}
 
 #section2 {
   display: none;
@@ -42,7 +40,7 @@
 
 #section3 {
   display: none;
-} 
+}
 
 #section4 {
   display: none;
@@ -91,6 +89,19 @@
   content: "\f141";
 }
 
+/*Icon ProgressBar after progress*/
+#progressbar #first.completed:before,
+#progressbar #second.completed:before,
+#progressbar #third.completed:before {
+  content: "\f00c";
+}
+
+#progressbar #first.active:before,
+#progressbar #second.active:before,
+#progressbar #third.active:before {
+  content: "\f304";
+}
+
 /*Icon ProgressBar before any progress*/
 #progressbar li:before {
   width: 3.125rem;
@@ -127,12 +138,16 @@
   background: #507cdd;
 }
 
+#progressbar li.completed::before {
+  background: #02bc8a;
+}
+
 #progressbar li.active:after {
   background: lightgray;
   /* background:  #02BC8A; */
 }
 
-/*Animated Progress Bar*/
+/* Animated Progress Bar */
 .progress {
   height: 1.25rem;
 }

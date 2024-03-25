@@ -15,7 +15,7 @@
 }
 
 /* transferir dinero */
-#heading {
+.heading {
   color: #000;
   font-family: Montserrat;
   font-size: 1.25rem;
@@ -84,12 +84,13 @@
   margin-left: 0.5rem;
 }
 
-#next-btn{
-  margin-top: 8rem;
+#next-btn {
   width: 17.813rem;
   height: 3.209rem;
   border-radius: 0.535rem;
   background: #311b92;
+  position: fixed;
+  bottom: 1.916rem;
 }
 
 #next-btn:hover {
