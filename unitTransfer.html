@@ -29,7 +29,7 @@
     <div class="container p-0">
       <div class="row w-100 d-flex justify-content-between">
         <div class="col col-sm-3">
-          <div class="p-3"><img src="images/flecha.svg" /></div>
+          <div id="back-btn-1" class="btn p-3"><img src="images/flecha.svg" /></div>
         </div>
         <div class="col col-sm-3"></div>
         <div class="col col-sm-3 wibond-logo">
@@ -49,7 +49,7 @@
     <div class="container">
       <div class="row mx-0">
         <div class="col d-flex justify-content-start">
-          <h1 class="heading">Transferir dinero</h2>
+          <h1 id="title" class="heading">Transferir dinero</h2>
         </div>
       </div>
       <div class="row">
@@ -86,13 +86,13 @@
               <li class="list-group-item box-title-group-list">
                 <h1 class="text-title-group-list">Tipo de cuenta</h1>
               </li>
-              <li class="list-group-item box">
-                <input class="form-check-input m-0" type="radio" name="listGroupRadio" value="" id="radiowibond" />
+              <li class="list-group-item box d-flex justify-content-between align-content-center">
                 <label class="form-check-label text" for="radiowibond">Wibond</label>
+                <input class="form-check-input m-0" type="radio" name="listGroupRadio" value="" id="radiowibond" />
               </li>
-              <li class="list-group-item box">
-                <input class="form-check-input m-0" type="radio" name="listGroupRadio" value="" id="radioother" />
+              <li class="list-group-item box d-flex justify-content-between align-content-center">
                 <label class="form-check-label text" for="radioother">Cuenta bancaria</label>
+                <input class="form-check-input m-0" type="radio" name="listGroupRadio" value="" id="radioother" />
               </li>
             </ul>
           </div>
@@ -139,13 +139,15 @@
               <div class="form-group mb-2">
                 <img src="images/circle-exclamation.svg" alt="" class="icon" />
                 <span id="input1" class=" form-control
-                                bg-user-email 
+                                bg-taxes 
                                 d-flex 
                                 justify-content-between 
                                 align-items-center">Impuestos<span id="taxes">ARS 0,0</span></span>
               </div>
-              <div class="form-group d-flex justify-content-between" id="form-message">
-                <input type="text" class="form-control bg-pass " id="message" placeholder="Añadir mensaje" />
+              <div class="form-group d-flex justify-content-between input-wrapper" id="form-message">
+                <input type="text" class="form-control bg-msg" id="message" placeholder=" Añadir mensaje"
+                  maxlength="25" />
+                <img src="images/edit.svg" class="input-icon" alt="">
               </div>
             </form>
           </div>

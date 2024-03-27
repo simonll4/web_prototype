@@ -31,11 +31,11 @@
 } */
 
 #section1 {
-  display: none;
+  display: block;
 }
 
 #section2 {
-  display: block;
+  display: none;
 }
 
 /*The background card*/
@@ -134,9 +134,9 @@
   background: #02bc8a;
 }
 
-#progressbar li.active:after {
-  background: lightgray;
-  /* background:  #02BC8A; */
+#progressbar li.completed:after {
+  /* background: lightgray; */
+  background: #02bc8a;
 }
 
 /* Animated Progress Bar */
@@ -152,6 +152,12 @@
 .fit-image {
   width: 100%;
   object-fit: cover;
+}
+
+/* back button */
+
+#back-btn-2 {
+  border: none;
 }
 
 /*Next Button*/

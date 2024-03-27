@@ -142,9 +142,9 @@
   background: #02bc8a;
 }
 
-#progressbar li.active:after {
-  background: lightgray;
-  /* background:  #02BC8A; */
+#progressbar li.completed:after {
+  /* background: lightgray; */
+  background: #02bc8a;
 }
 
 /* Animated Progress Bar */
@@ -235,17 +235,34 @@
   padding-left: 3rem;
 }
 
-
-.bg-user-email {
-  border-radius: 0.625rem;
-  background: #303f9f33;
-  height: 3.125rem;
+#amount::placeholder {
+  color: white;
 }
 
-.bg-pass {
+.bg-taxes {
+  border-radius: 0.625rem;
+  background: #303f9f33;
+  width: 19.6875rem;
+  height: 2.1875rem;
+}
+
+.bg-msg {
   border-radius: 0.625rem;
   background: #f7f7f7;
-  height: 3.125rem;
+  width: 19.6875rem;
+  height: 2.1875rem;
+  padding-left: 1rem !important;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .icon {
@@ -258,6 +275,11 @@
   position: absolute;
   top: 0.625rem;
   left: 280px;
+}
+
+/* back button */
+#back-btn-1 {
+  border: none;
 }
 
 /*Next Button*/
@@ -340,3 +362,5 @@
 li::marker {
   content: "";
 }
+
+/* section 2 */
