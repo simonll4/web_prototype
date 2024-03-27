@@ -7,7 +7,7 @@
   <title>Wibond</title>
   <!-- ------------------------------------------------------------------------------ -->
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/transferenciaU.css" />
+  <link rel="stylesheet" href="css/unitTransfer.css" />
   <!-- fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -138,14 +138,14 @@
             <form action="transferencia.html">
               <div class="form-group mb-2">
                 <img src="images/circle-exclamation.svg" alt="" class="icon" />
-                <span class=" form-control
+                <span id="input1" class=" form-control
                                 bg-user-email 
                                 d-flex 
                                 justify-content-between 
                                 align-items-center">Impuestos<span id="taxes">ARS 0,0</span></span>
               </div>
-              <div class="form-group">
-                <input type="text" class="form-control bg-pass" id="message" placeholder="Añadir mensaje" />
+              <div class="form-group d-flex justify-content-between" id="form-message">
+                <input type="text" class="form-control bg-pass " id="message" placeholder="Añadir mensaje" />
               </div>
             </form>
           </div>
@@ -251,7 +251,7 @@
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
     crossorigin="anonymous"></script>
   <script src="bootstrap/js/bootstrap.min.js"></script>
-  <script src="js/transferenciaU.js"></script>
+  <script src="js/unitTransfer.js"></script>
 </body>
 
 </html>

@@ -235,9 +235,16 @@
   padding-left: 3rem;
 }
 
+
 .bg-user-email {
   border-radius: 0.625rem;
   background: #303f9f33;
+  height: 3.125rem;
+}
+
+.bg-pass {
+  border-radius: 0.625rem;
+  background: #f7f7f7;
   height: 3.125rem;
 }
 
@@ -245,6 +252,12 @@
   position: absolute;
   top: calc(50% - 0.8rem);
   left: 0.5rem;
+}
+
+.icon-edit {
+  position: absolute;
+  top: 0.625rem;
+  left: 280px;
 }
 
 /*Next Button*/

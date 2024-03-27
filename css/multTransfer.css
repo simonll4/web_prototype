@@ -1,0 +1,286 @@
+.wibond-img {
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-left: 0rem;
+  margin-left: 0rem;
+}
+
+.wibond-logo {
+  padding-top: 0rem;
+  padding-right: 0.2rem;
+  margin-right: 0rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+/* transferir dinero */
+.heading {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+/*Hide all except first fieldset*/
+/* #main section:not(:first-of-type) {
+  display: none;
+} */
+
+#section1 {
+  display: none;
+}
+
+#section2 {
+  display: block;
+}
+
+/*The background card*/
+.card {
+  z-index: 0;
+  border: none;
+  position: relative;
+}
+
+/*Icon progressbar*/
+#progressbar {
+  margin-bottom: 1.875rem;
+  overflow: hidden;
+  color: lightgrey;
+}
+
+#progressbar .active {
+  color: #02bc8a;
+}
+
+#progressbar li {
+  list-style-type: none;
+  font-size: 0.938rem;
+  width: 6.3rem;
+  float: left;
+  position: relative;
+  font-weight: 400;
+}
+
+/*Icons in the ProgressBar*/
+#progressbar #first:before {
+  font-family: FontAwesome;
+  content: "\f304";
+}
+
+#progressbar #second:before {
+  font-family: FontAwesome;
+  content: "\f141";
+}
+
+#progressbar #third:before {
+  font-family: FontAwesome;
+  content: "\f141";
+}
+
+/*Icon ProgressBar after progress*/
+#progressbar #first.completed:before,
+#progressbar #second.completed:before,
+#progressbar #third.completed:before {
+  content: "\f00c";
+}
+
+#progressbar #first.active:before,
+#progressbar #second.active:before,
+#progressbar #third.active:before {
+  content: "\f304";
+}
+
+/*Icon ProgressBar before any progress*/
+#progressbar li:before {
+  width: 3.125rem;
+  height: 3.125rem;
+  line-height: 2.813rem;
+  display: block;
+  font-size: 1.25rem;
+  color: #ffffff;
+  background: lightgray;
+  border-radius: 50%;
+  margin: 0 auto 0.625rem auto;
+  padding: 0.125rem;
+}
+
+/*ProgressBar connectors*/
+#progressbar li:after {
+  content: "";
+  width: 100%;
+  height: 0.125rem;
+  background: lightgray;
+  position: absolute;
+  left: 1;
+  top: 1.563rem;
+  z-index: -1;
+}
+
+/* Ocultar la línea del tercer elemento */
+#progressbar li:nth-child(3):after {
+  display: none;
+}
+
+/* Color number of the step and the connector before it */
+#progressbar li.active:before {
+  background: #507cdd;
+}
+
+#progressbar li.completed::before {
+  background: #02bc8a;
+}
+
+#progressbar li.active:after {
+  background: lightgray;
+  /* background:  #02BC8A; */
+}
+
+/* Animated Progress Bar */
+.progress {
+  height: 1.25rem;
+}
+
+.progress-bar {
+  background-color: #02bc8a;
+}
+
+/*Fit image in bootstrap div*/
+.fit-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+/*Next Button*/
+#main-m #next-btn-2 {
+  width: 17.813rem;
+  height: 3.209rem;
+  border-radius: 0.535rem;
+  background: #311b92;
+  position: fixed;
+  bottom: 1.916rem;
+}
+
+#next-btn-2:hover {
+  background: #311bff;
+}
+
+.next-text {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 0.909rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* seccion 1 */
+/* texto explicativo */
+.text {
+  color: #4d4d4d;
+  font-family: Montserrat;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+/* 
+Botones  */
+
+#btn-upload-file {
+  width: 15.3125rem;
+  height: 2.5rem;
+  flex-shrink: 0;
+  border-radius: 0.25rem;
+  color: white;
+  background: #507cdd;
+  margin-top: 1.81rem;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 0.625rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1rem; /* 160% */
+}
+
+.img-upload {
+  padding-right: 0.5rem;
+}
+
+#btn-download-file {
+  margin-top: 1rem;
+  width: 15.3125rem;
+  height: 2.5rem;
+  flex-shrink: 0;
+  border-radius: 0.25rem;
+  color: #507cdd;
+  font-family: Montserrat;
+  font-size: 0.625rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1rem; /* 160% */
+  border-color: #507cdd;
+}
+
+.info {
+  flex-shrink: 0;
+  border-radius: 0.625rem;
+  background: #fff;
+  margin-top: 40px;
+}
+
+.info button {
+  color: #4d4d4d;
+  font-family: Montserrat;
+  font-size: 0.6875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.num-circle {
+  color: #507cdd;
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
+.circle-text {
+  font-size: 0.8rem;
+  color: #4d4d4d;
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/* section 2 */
+
+/* botones */
+
+.contact-btn {
+  width: 15.3125rem;
+  height: 2.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #7f8a8e;
+}
+
+#btn-email {
+  margin-top: 1.12rem;
+}
+
+#btn-whatsapp {
+  margin-top: 0.56rem;
+}
+
+#btn-sms {
+  margin-top: 0.56rem;
+}
+
+.fa-envelope,
+.fa-whatsapp {
+  padding-right: 0.5rem;
+}
