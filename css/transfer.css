@@ -1,20 +1,39 @@
-.wibond-img {
-  padding-top: 1rem;
-  padding-right: 1rem;
-  padding-left: 0rem;
-  margin-left: 0rem;
+.iframe-navegation-bar {
+  width: 100%;
+  height: 5.8125rem;
 }
 
-.wibond-logo {
-  padding-top: 0rem;
-  padding-right: 0.2rem;
-  margin-right: 0rem;
-  display: flex;
-  justify-content: end;
-  align-items: center;
+.iframe-progress-bar {
+  width: 100%;
+  height: 5rem;
 }
 
-/* transferir dinero */
+.iframe-transfer-start {
+  width: 100%;
+  height: 18rem;
+  margin-top: 0.5rem;
+}
+
+.iframe-st-1 {
+  width: 100%;
+  height: 22rem;
+  margin-top: 2rem;
+}
+
+.iframe-st-2{
+  width: 100%;
+  height: 22rem;
+  margin-top: 2rem;
+
+}
+
+.iframe-st-3{
+  width: 100%;
+  height: 16rem;
+  margin-top: 2rem;
+
+}
+
 .heading {
   color: #000;
   font-family: Montserrat;
@@ -23,65 +42,6 @@
   font-weight: 600;
   line-height: normal;
   text-transform: capitalize;
-}
-
-.card-available-money {
-  margin-top: 2.25rem;
-  width: 19rem;
-  height: 6rem;
-  border-radius: 0.625rem;
-  background: #5252ff;
-}
-
-.card-title {
-  color: #fff;
-  font-family: Lato;
-  font-size: 0.75rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  z-index: 5;
-}
-
-.card-text {
-  color: #fff;
-  font-family: Lato;
-  font-size: 1.563rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  z-index: 5;
-}
-
-.box-title-group-list {
-  width: 19rem;
-  height: 2.563rem;
-  border-radius: 0.625rem 0.625rem 0rem 0rem;
-  background: #1f1f1f;
-}
-
-.text-title-group-list {
-  color: #fff;
-  font-family: Montserrat;
-  font-size: 0.75rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-
-.box {
-  width: 19rem;
-  height: 4rem;
-}
-
-.text-addressee {
-  color: #4d4d4d;
-  font-family: Montserrat;
-  font-size: 0.75rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  margin-left: 0.5rem;
 }
 
 #next-btn {
@@ -104,4 +64,30 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+
+/* visibilidad de secciones */
+
+#progressbarsect {
+  display: block;
+}
+
+#transferstartsect {
+  display: none;
+}
+
+#buttonsect {
+  display: block;
+}
+
+#st1sect{
+  display: none;
+}
+
+#st2sect{
+  display: none;
+}
+
+#st3sect{
+  display: block;
 }

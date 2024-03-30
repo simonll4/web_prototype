@@ -1,0 +1,58 @@
+.card-available-money {
+  margin-top: 2.25rem;
+  width: 19rem;
+  height: 6rem;
+  border-radius: 0.625rem;
+  background: #5252ff;
+}
+
+.card-title {
+  color: #fff;
+  font-family: Lato;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  z-index: 5;
+}
+
+.card-text {
+  color: #fff;
+  font-family: Lato;
+  font-size: 1.563rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  z-index: 5;
+}
+
+.box-title-group-list {
+  width: 19rem;
+  height: 2.563rem;
+  border-radius: 0.625rem 0.625rem 0rem 0rem;
+  background: #1f1f1f;
+}
+
+.text-title-group-list {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.box {
+  width: 19rem;
+  height: 4rem;
+}
+
+.text-addressee {
+  color: #4d4d4d;
+  font-family: Montserrat;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 0.5rem;
+}

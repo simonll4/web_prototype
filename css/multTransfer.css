@@ -1,17 +1,6 @@
-.wibond-img {
-  padding-top: 1rem;
-  padding-right: 1rem;
-  padding-left: 0rem;
-  margin-left: 0rem;
-}
-
-.wibond-logo {
-  padding-top: 0rem;
-  padding-right: 0.2rem;
-  margin-right: 0rem;
-  display: flex;
-  justify-content: end;
-  align-items: center;
+.navegationBar {
+  width: 100%;
+  height: 5.8125rem;
 }
 
 /* transferir dinero */
@@ -38,141 +27,7 @@
   display: none;
 }
 
-/*The background card*/
-.card {
-  z-index: 0;
-  border: none;
-  position: relative;
-}
 
-/*Icon progressbar*/
-#progressbar {
-  margin-bottom: 1.875rem;
-  overflow: hidden;
-  color: lightgrey;
-}
-
-#progressbar .active {
-  color: #02bc8a;
-}
-
-#progressbar li {
-  list-style-type: none;
-  font-size: 0.938rem;
-  width: 6.3rem;
-  float: left;
-  position: relative;
-  font-weight: 400;
-}
-
-/*Icons in the ProgressBar*/
-#progressbar #first:before {
-  font-family: FontAwesome;
-  content: "\f304";
-}
-
-#progressbar #second:before {
-  font-family: FontAwesome;
-  content: "\f141";
-}
-
-#progressbar #third:before {
-  font-family: FontAwesome;
-  content: "\f141";
-}
-
-/*Icon ProgressBar after progress*/
-#progressbar #first.completed:before,
-#progressbar #second.completed:before,
-#progressbar #third.completed:before {
-  content: "\f00c";
-}
-
-#progressbar #first.active:before,
-#progressbar #second.active:before,
-#progressbar #third.active:before {
-  content: "\f304";
-}
-
-/*Icon ProgressBar before any progress*/
-#progressbar li:before {
-  width: 3.125rem;
-  height: 3.125rem;
-  line-height: 2.813rem;
-  display: block;
-  font-size: 1.25rem;
-  color: #ffffff;
-  background: lightgray;
-  border-radius: 50%;
-  margin: 0 auto 0.625rem auto;
-  padding: 0.125rem;
-}
-
-/*ProgressBar connectors*/
-#progressbar li:after {
-  content: "";
-  width: 100%;
-  height: 0.125rem;
-  background: lightgray;
-  position: absolute;
-  left: 1;
-  top: 1.563rem;
-  z-index: -1;
-}
-
-/* Ocultar la línea del tercer elemento */
-#progressbar li:nth-child(3):after {
-  display: none;
-}
-
-/* Color number of the step and the connector before it */
-#progressbar li.active:before {
-  background: #507cdd;
-}
-
-#progressbar li.completed::before {
-  background: #02bc8a;
-}
-
-#progressbar li.completed:after {
-  /* background: lightgray; */
-  background: #02bc8a;
-}
-
-/* Animated Progress Bar */
-.progress {
-  height: 1.25rem;
-}
-
-.progress-bar {
-  background-color: #02bc8a;
-}
-
-/*Fit image in bootstrap div*/
-.fit-image {
-  width: 100%;
-  object-fit: cover;
-}
-
-/* back button */
-
-#back-btn-2 {
-  border: none;
-}
-
-/*Next Button*/
-#main-m #next-btn-2 {
-  width: 17.813rem;
-  height: 3.209rem;
-  border-radius: 0.535rem;
-  background: #311b92;
-  position: fixed;
-  bottom: 1.916rem;
-}
-
-#next-btn-2:hover {
-  background: #311bff;
-}
 
 .next-text {
   color: #fff;
@@ -232,14 +87,18 @@ Botones  */
   border-color: #507cdd;
 }
 
-.info {
+.info-multiples {
+  /* width: 19.8125rem;
+  height: 2.5625rem; */
   flex-shrink: 0;
   border-radius: 0.625rem;
   background: #fff;
   margin-top: 40px;
-}
 
-.info button {
+  /* Efecto sombra */
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+}
+.info-multiples button {
   color: #4d4d4d;
   font-family: Montserrat;
   font-size: 0.6875rem;
@@ -253,16 +112,15 @@ Botones  */
   width: 0.875rem;
   height: 0.875rem;
 }
-
 .circle-text {
   font-size: 0.8rem;
+  /* width: 16.5625rem; */
   color: #4d4d4d;
   font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
-
 /* section 2 */
 
 /* botones */

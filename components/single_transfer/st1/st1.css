@@ -1,0 +1,85 @@
+.card-available-money {
+  width: 19rem;
+  height: 6rem;
+  border-radius: 0.625rem;
+  background: #5252ff;
+}
+
+.card-title {
+  color: #fff;
+  font-family: Lato;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  z-index: 5;
+}
+
+.card-header {
+  border: none;
+}
+
+.card-text {
+  color: #fff;
+  font-family: Lato;
+  font-size: 1.563rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  z-index: 5;
+}
+
+.box-title-group-list {
+  width: 19rem;
+  height: 2.563rem;
+  border-radius: 0.625rem 0.625rem 0rem 0rem;
+  background: #1f1f1f;
+}
+.text-title-group-list {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.box {
+  width: 19rem;
+  height: 4rem;
+  flex: content;
+  justify-content: center;
+}
+
+.text {
+  color: #4d4d4d;
+  font-family: Montserrat;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 0.5rem;
+}
+
+.form-group {
+  position: relative;
+}
+
+.form-group .form-control {
+  left: 0.5rem;
+  padding-left: 3rem;
+}
+
+.icon {
+  position: absolute;
+  top: calc(50% - 0.8rem);
+  left: 0.5rem;
+}
+
+.bg-recipient {
+  width: 19.75rem;
+  height: 3.125rem;
+  flex-shrink: 0;
+  border-radius: 0.625rem;
+  background: #303f9f33;
+}
