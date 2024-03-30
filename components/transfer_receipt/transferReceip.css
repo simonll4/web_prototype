@@ -1,0 +1,97 @@
+.text {
+  color: #4d4d4d;
+  font-family: Montserrat;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.contact {
+  height: 1.813rem;
+  width: 1.813rem;
+  border-radius: 50%;
+  background-color: #7165e3;
+}
+
+.sender {
+  height: 1.813rem;
+  width: 1.813rem;
+  border-radius: 50%;
+  background-color: #233f78;
+}
+
+.box-title-group-list {
+  width: 19rem;
+  height: 2.563rem;
+  border-radius: 0.625rem 0.625rem 0rem 0rem;
+  background: #1f1f1f;
+}
+.text-title-group-list {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.box {
+  width: 19rem;
+  height: 25.3125rem;
+  border-radius: 0.625rem;
+  background: rgba(255, 255, 255, 0.6);
+  flex: content;
+  justify-content: center;
+}
+
+.text-share-receipt {
+  margin-top: 2.75rem;
+  color: #233f78;
+  font-family: Montserrat;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+
+#newtrasnferbtn {
+  width: 17.8125rem;
+  height: 3.20944rem;
+  flex-shrink: 0;
+  border-radius: 0.53494rem;
+  background: #311b92;
+  position: fixed;
+  bottom: 6.1rem;
+}
+
+#goactivitybtn {
+  width: 17.8125rem;
+  height: 3.20944rem;
+  flex-shrink: 0;
+  border-radius: 0.53494rem;
+  background: #fff;
+  border-color: #311b92;
+  position: fixed;
+  bottom: 1.92rem;
+}
+
+.new-trasnfer-text {
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 0.90938rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.go-activity-text {
+  color: #7165e3;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 0.90938rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}

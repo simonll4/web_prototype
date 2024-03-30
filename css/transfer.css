@@ -20,18 +20,45 @@
   margin-top: 2rem;
 }
 
-.iframe-st-2{
+.iframe-st-2 {
   width: 100%;
   height: 22rem;
   margin-top: 2rem;
-
 }
 
-.iframe-st-3{
+.iframe-st-3 {
   width: 100%;
   height: 16rem;
   margin-top: 2rem;
+}
 
+.iframe-st-4 {
+  width: 100%;
+  height: 16rem;
+  margin-top: 2rem;
+}
+
+.iframe-mt-1 {
+  width: 100%;
+  height: 30rem;
+  margin-top: 0.5rem;
+}
+
+.iframe-mt-2 {
+  width: 100%;
+  height: 20rem;
+  margin-top: 0.5rem;
+}
+
+.iframe-validate-transfer {
+  width: 100%;
+  height: 40rem;
+  margin-top: 0.5rem;
+}
+
+.iframe-transfer-receip {
+  width: 100%;
+  height: 41rem;
 }
 
 .heading {
@@ -44,7 +71,7 @@
   text-transform: capitalize;
 }
 
-#next-btn {
+#nextbtn {
   width: 17.813rem;
   height: 3.209rem;
   border-radius: 0.535rem;
@@ -53,7 +80,7 @@
   bottom: 1.916rem;
 }
 
-#next-btn:hover {
+#nextbtn:hover {
   background: #311bff;
 }
 
@@ -66,28 +93,55 @@
   line-height: normal;
 }
 
+
+
 /* visibilidad de secciones */
 
 #progressbarsect {
-  display: block;
+  display: none;
 }
 
 #transferstartsect {
   display: none;
 }
 
-#buttonsect {
-  display: block;
-}
 
-#st1sect{
+#nextbtnsect {
   display: none;
 }
 
-#st2sect{
+/* single transfer */
+#st1sect {
   display: none;
 }
 
-#st3sect{
+#st2sect {
+  display: none;
+}
+
+#st3sect {
+  display: none;
+}
+
+#st4sect {
+  display: none;
+}
+
+/* multiple transfer */
+#mt1sect {
+  display: none;
+}
+
+#mt2sect {
+  display: none;
+}
+
+/* validate transfer */
+#validatetransfersect {
   display: block;
+}
+
+/* transfer receipt */
+#transferreceipsect {
+  display: none;
 }

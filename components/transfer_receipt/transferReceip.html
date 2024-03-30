@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wibond</title>
+    <!-- Add Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Add custom CSS -->
+    <link rel="stylesheet" href="transferReceip.css">
+    <!-- Add icon Fontawesome -->
+    <script src="https://kit.fontawesome.com/6d3ed19a44.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col-12 col-sm-12 col-md-12 d-flex justify-content-center">
+                <ul class="list-group mt-1">
+                    <li class="list-group-item box-title-group-list">
+                        <h1 class="text-title-group-list d-flex justify-content-between align-items-center">Comprobante
+                            <img src="img/resumen.svg">
+                        </h1>
+                    </li>
+                    <li class="box list-group-item">
+                        <div class="container p-0 m-0">
+                            <div class="row mt-3">
+                                <div class="col ">
+                                    <h2 class="text d-flex justify-content-between align-items-center">ID del
+                                        movimientos <span id="movementid">2015142222</span> </h2>
+                                    <h2 class="text d-flex justify-content-between align-items-center">Fecha <span
+                                            id="movementdate">21/03/2024</span></h2>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col d-flex justify-content-start">
+                                    <h2 class="text">Emisor de transferencia</h2>
+                                </div>
+                            </div>
+                            <div class="row m-0 d-flex justify-content-start">
+                                <div class="sender col-4 mt-3">
+                                    <span class="text-white d-flex justify-content-center">GB</span>
+                                </div>
+                                <div class="col-8 mt-2">
+                                    <span class="text">Gerardo B.</span>
+                                    <br>
+                                    <span class="text">CUIT 123456789123 </span>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col d-flex justify-content-start">
+                                    <h2 class="text">Destino de transferencia</h2>
+                                </div>
+                            </div>
+                            <div class="row m-0 d-flex justify-content-start ">
+                                <div class="contact col-4 mt-3">
+                                    <span class="text-white d-flex justify-content-center">AS</span>
+                                </div>
+                                <div class="col-8 mt-2">
+                                    <span class="text">Ailen Saraceni</span>
+                                    <br>
+                                    <span class="text">CUIT 23392954864 </span>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-12">
+                                    <span class=" d-flex justify-content-between">Importe
+                                        <span class="selectedamount">ARS $1500,000</span></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col d-flex justify-content-center ">
+                                    <h2 id="sharetext" class="text-share-receipt"> <i
+                                            class="bi bi-share m-1"></i>Compartir
+                                        comprobante</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col d-flex justify-content-center align-content-center">
+                <h2 class="text">¡Gracias por usar Wibond!</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+                <a id="newtrasnferbtn" class="btn"><span class="new-trasnfer-text">Nueva transferencia</span></a>
+            </div>
+            <div class="col d-flex justify-content-center">
+                <a id="goactivitybtn" class="btn"><span class="go-activity-text">Ir a actividad</span></a>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------------------------------------------------------------------------- -->
+    <!-- Add Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

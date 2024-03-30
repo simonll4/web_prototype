@@ -1,0 +1,31 @@
+.text {
+  color: #4d4d4d;
+  font-family: Montserrat;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.contact-btn {
+  width: 15.3125rem;
+  height: 2.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #7f8a8e;
+}
+
+#btn-email {
+  margin-top: 1.12rem;
+}
+
+#btn-whatsapp {
+  margin-top: 0.56rem;
+}
+
+#btn-sms {
+  margin-top: 0.56rem;
+}
+
+.fa-envelope,
+.fa-whatsapp {
+  padding-right: 0.5rem;
+}

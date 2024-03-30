@@ -1,0 +1,76 @@
+.text {
+  width: 19.9375rem;
+  color: #4d4d4d;
+  font-family: Montserrat;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.validate-container {
+  width: 15.31244rem;
+  height: 3.0625rem;
+  flex-shrink: 0;
+  margin-top: 2.5rem;
+}
+
+.validate-container input {
+  width: 3.34094rem;
+  height: 3.0625rem;
+  flex-shrink: 0;
+  border-radius: 0.64963rem;
+  background: #d5d5e1;
+}
+
+.resend-text {
+  color: #979797;
+  font-family: Montserrat;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 2rem;
+}
+
+#confirmbtn {
+  width: 17.8125rem;
+  height: 3.20944rem;
+  border-radius: 0.53494rem;
+  background: #311b92;
+  position: fixed;
+  bottom: 6.1rem;
+}
+
+#cancelbtn {
+  width: 17.8125rem;
+  height: 3.20944rem;
+  border-radius: 0.53494rem;
+  background: #fff;
+  border-color: #311b92;
+  margin-top: 1rem;
+  position: fixed;
+  bottom: 1.92rem;
+}
+
+.confirm-text {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 0.909rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.cancel-text {
+  width: 4.54675rem;
+  height: 1.12331rem;
+  flex-shrink: 0;
+  color: #7165e3;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 0.90938rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
