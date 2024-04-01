@@ -93,7 +93,7 @@ HISTORIAS DE USUARIO
 
 |**CRITERIOS DE ACEPTACIÓN**|<p>1. [HTML] Maquetar la pantalla.</p><p>2. [HTML] El botón de Compartir que sea un link a Whatsapp con un texto con el resumen de la transferencia.</p><p>3. [HTML] El botón de Nueva transferencia debe ir hacia la pantalla para seleccionar entre transferencia simple o múltiple.</p>|
 | :- | - |
-|**IMÁGENES**|![](readme_resources/Aspose.Words.132c1a5e-6ef5-4c16-b1ee-33e3d450dd6a.008.jpeg)|
+|**IMÁGENES**|![](readme _resources/Aspose.Words.132c1a5e-6ef5-4c16-b1ee-33e3d450dd6a.008.jpeg)|
 
 RECURSOS EN FIGMA
 
