@@ -42,15 +42,15 @@
 }
 
 /*Icon ProgressBar after progress*/
-#progressbar #first.completed:before,
-#progressbar #second.completed:before,
-#progressbar #third.completed:before {
+#progressbar #firststep.completed:before,
+#progressbar #secondstep.completed:before,
+#progressbar #thirdstep.completed:before {
   content: "\f00c";
 }
 
-#progressbar #first.active:before,
-#progressbar #second.active:before,
-#progressbar #third.active:before {
+#progressbar #firststep.active:before,
+#progressbar #secondstep.active:before,
+#progressbar #thirdstep.active:before {
   content: "\f304";
 }
 

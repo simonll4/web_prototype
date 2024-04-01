@@ -20,10 +20,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 
-<body>
+<body >
   <!-- ------------------------------------------------------------------------------ -->
   <!-- ---------------------------- NAVEGATION BAR ---------------------------------- -->
-  <iframe src="components/navegation_bar/navegationBar.html" frameborder="0" class="iframe-navegation-bar"></iframe>
+  <iframe src="components/navegation_bar/navegationBar.html" frameborder="0" class="iframe-navegation-bar "></iframe>
   <!-- --------------------------------------------------------------------------------------------- -->
   <!------------------------------------------ TEXT --------------------------------------------------->
   <div class="container">
@@ -35,14 +35,14 @@
   </div>
   <!-- --------------------------------------------------------------------------------------------- -->
   <!----------------------------------------- SECTIONS ------------------------------------------------->
-  <main id="transfer-main">
+  <main id="transfer-main" >
     <!-- BARRA DE PROGRESO DE TRANSFERENCIA -->
     <section id="progressbarsect">
       <iframe src="components/progress_bar/progressBar.html" class="iframe-progress-bar" frameborder="0"></iframe>
     </section>
     <!-- INICIO DE TRANSFERENCIA -TIPO DE DESTINATARIO- -->
     <section id="transferstartsect">
-      <iframe src="components/trasnfer_start/transferStart.html" class="iframe-transfer-start" frameborder="0"></iframe>
+      <iframe id="transferstartif" src="components/trasnfer_start/transferStart.html" class="iframe-transfer-start" frameborder="0"></iframe>
     </section>
     <!-- --------------------------------------------------------------------------------------------- -->
     <!----------------------------------- UNICO DESTINATARIO --------------------------------------------->
@@ -80,7 +80,8 @@
     <section id="nextbtnsect">
       <div class="row">
         <div class="col-12 col-md-12 d-flex justify-content-center">
-          <a id="nextbtn" class="btn"><span class="next-text">Siguiente</span></a>
+          <!-- <a id="nextbtn" class="btn"><span class="next-text">Siguiente</span></a> -->
+          <button disabled id="nextbtn" class="btn"><span class="next-text">Siguiente</span></button>
         </div>
       </div>
     </section>

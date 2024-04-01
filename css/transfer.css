@@ -1,3 +1,4 @@
+
 .iframe-navegation-bar {
   width: 100%;
   height: 5.8125rem;
@@ -52,7 +53,7 @@
 
 .iframe-validate-transfer {
   width: 100%;
-  height: 40rem;
+  height: 36rem;
   margin-top: 0.5rem;
 }
 
@@ -93,8 +94,6 @@
   line-height: normal;
 }
 
-
-
 /* visibilidad de secciones */
 
 #progressbarsect {
@@ -102,12 +101,11 @@
 }
 
 #transferstartsect {
-  display: none;
+  display: block;
 }
 
-
 #nextbtnsect {
-  display: none;
+  display: block;
 }
 
 /* single transfer */
@@ -138,7 +136,7 @@
 
 /* validate transfer */
 #validatetransfersect {
-  display: block;
+  display: none;
 }
 
 /* transfer receipt */
