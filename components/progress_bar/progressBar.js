@@ -21,9 +21,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         .classList.add("completed");
       steps[currentStepIndex + 1].classList.add("active");
     }
-
     currentStepIndex++;
-    console.log(currentStepIndex);
   });
 
   window.parent.addEventListener("backbuttonclicked", () => {
@@ -43,9 +41,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
           .classList.remove("completed");
         steps[currentStepIndex - 1].classList.add("active");
       }
-
       currentStepIndex--;
-      console.log(currentStepIndex);
     }
   });
 });

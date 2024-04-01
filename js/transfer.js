@@ -1,6 +1,59 @@
 document.addEventListener("DOMContentLoaded", (event) => {
   btnNext = document.getElementById("nextbtn");
 
+  btnNext.addEventListener("click", () => {
+    let selectedRadio = localStorage.getItem("selectedRadio");
+    if (selectedRadio === "singletransfer") {
+      singleTransferNext();
+    }
+    if (selectedRadio === "multipletransfer") {
+    }
+  });
+
+  // indice de las secciones
+  let currentStSectionIndex = 0;
+
+  function singleTransferNext() {
+    if (currentStSectionIndex < singleTranferSections.length - 1) {
+      currentStSectionIndex++;
+    }
+
+    if (currentStSectionIndex < singleTranferSections.length - 1) {
+      // Oculta sección actual
+      singleTranferSections[currentStSectionIndex - 1].style.display = "none";
+
+      // activar progress bar
+      if (singleTranferSections[currentStSectionIndex].id === "st1sect") {
+        document.querySelector("#progressbarsect").style.display = "block";
+      }
+
+      // cambio de estado de la progress bar
+      if (
+        (singleTranferSections[currentStSectionIndex].id === "st2sect") |
+        (singleTranferSections[currentStSectionIndex].id === "st4sect")
+      ) {
+        //dispara evento para capturarlo en progressBar.js
+        window.dispatchEvent(new CustomEvent("nextbuttonclicked"));
+      }
+
+      // cambio de titulo
+      if (singleTranferSections[currentStSectionIndex].id === "st3sect") {
+        document.getElementById("title").innerText = "Verificacion";
+      }
+
+      // Oculta boton next
+      if (
+        singleTranferSections[currentStSectionIndex].id ===
+        "validatetransfersect"
+      ) {
+        btnNext.style.display = "none";
+      }
+
+      // Muestra la sección actual
+      singleTranferSections[currentStSectionIndex].style.display = "block";
+    }
+  }
+
   // activar boton next
   document.addEventListener("iframechange", () => {
     let selectedRadio = localStorage.getItem("selectedRadio");
@@ -10,16 +63,16 @@ document.addEventListener("DOMContentLoaded", (event) => {
   });
 
   document.addEventListener("verifiedidentity", () => {
-    currentSectionIndex++;
+    currentStSectionIndex++;
     // ocultar progress bar
     if (
-      singleTranferSections[currentSectionIndex].id === "transferreceipsect"
+      singleTranferSections[currentStSectionIndex].id === "transferreceipsect"
     ) {
       document.querySelector("#progressbarsect").style.display = "none";
       // Oculta sección actual
-      singleTranferSections[currentSectionIndex - 1].style.display = "none";
+      singleTranferSections[currentStSectionIndex - 1].style.display = "none";
       // Muestra la sección actual
-      singleTranferSections[currentSectionIndex].style.display = "block";
+      singleTranferSections[currentStSectionIndex].style.display = "block";
     }
   });
 
@@ -27,84 +80,38 @@ document.addEventListener("DOMContentLoaded", (event) => {
   const singleTranferSections = document.querySelectorAll(
     "section[id^='st'], #transferstartsect, #transferreceipsect, #validatetransfersect"
   );
-  // indice de las secciones
-  let currentSectionIndex = 0;
-
-  function singleTransferNext() {
-    if (currentSectionIndex < singleTranferSections.length - 1) {
-      currentSectionIndex++;
-    }
-
-    if (currentSectionIndex < singleTranferSections.length - 1) {
-      // Oculta sección actual
-      singleTranferSections[currentSectionIndex - 1].style.display = "none";
-
-      // activar progress bar
-      if (singleTranferSections[currentSectionIndex].id === "st1sect") {
-        document.querySelector("#progressbarsect").style.display = "block";
-      }
-
-      // cambio de estado de la progress bar
-      if (
-        (singleTranferSections[currentSectionIndex].id === "st2sect") |
-        (singleTranferSections[currentSectionIndex].id === "st4sect")
-      ) {
-        //dispara evento para capturarlo en progressBar.js
-        window.dispatchEvent(new CustomEvent("nextbuttonclicked"));
-      }
-
-      // cambio de titulo
-      if (singleTranferSections[currentSectionIndex].id === "st3sect") {
-        document.getElementById("title").innerText = "Verificacion";
-      }
-
-      // Oculta boton next
-      if (
-        singleTranferSections[currentSectionIndex].id === "validatetransfersect"
-      ) {
-        btnNext.style.display = "none";
-      }
-
-      // Muestra la sección actual
-      singleTranferSections[currentSectionIndex].style.display = "block";
-    }
-  }
-
-  btnNext.addEventListener("click", () => {
-    let selectedRadio = localStorage.getItem("selectedRadio");
-    console.log(selectedRadio);
-    if (selectedRadio === "singletransfer") {
-      singleTransferNext();
-    }
-    if (selectedRadio === "multipletransfer") {
-    }
-  });
 
   document.addEventListener("backbtn", () => {
-    console.log("backbtn");
-    if (currentSectionIndex > 0) {
-      currentSectionIndex--;
+    if (currentStSectionIndex > 0) {
+      currentStSectionIndex--;
 
       if (
-        (singleTranferSections[currentSectionIndex].id === "st1sect") |
-        (singleTranferSections[currentSectionIndex].id === "st3sect")
+        (singleTranferSections[currentStSectionIndex].id === "st1sect") |
+        (singleTranferSections[currentStSectionIndex].id === "st3sect")
       ) {
         window.dispatchEvent(new CustomEvent("backbuttonclicked"));
       }
-      if (singleTranferSections[currentSectionIndex].id === "st4sect") {
+      if (singleTranferSections[currentStSectionIndex].id === "st4sect") {
         btnNext.style.display = "block";
       }
 
       if (
-        singleTranferSections[currentSectionIndex].id === "validatetransfersect"
+        singleTranferSections[currentStSectionIndex].id ===
+        "validatetransfersect"
       ) {
         document.querySelector("#progressbarsect").style.display = "block";
       }
 
+      if (
+        singleTranferSections[currentStSectionIndex].id === "transferstartsect"
+      ) {
+        document.querySelector("#progressbarsect").style.display = "none";
+      }
+
       // Oculta sección actual
-      singleTranferSections[currentSectionIndex + 1].style.display = "none";
+      singleTranferSections[currentStSectionIndex + 1].style.display = "none";
       // muestra sección anterior
-      singleTranferSections[currentSectionIndex].style.display = "block";
+      singleTranferSections[currentStSectionIndex].style.display = "block";
     }
   });
 });

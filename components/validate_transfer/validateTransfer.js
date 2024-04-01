@@ -14,6 +14,5 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   confirmBtn.addEventListener("click", () => {
     window.parent.document.dispatchEvent(new CustomEvent("verifiedidentity"));
-    console.log("verifiedidentity event dispatched");
   });
 });
