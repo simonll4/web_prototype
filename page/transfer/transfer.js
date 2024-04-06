@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   // se encarga de avanzar por las diferentes secciones de la transferencia unica
   function singleTransferNext() {
-    console.log("acaaaaaaaaaaaaaaaaaaaaa");
+    document.dispatchEvent(new CustomEvent("disablednextbtn"));
 
     // para no pasar de largo el indice
     if (currentSectionIndex < singleTransferSections.length - 1) {
@@ -63,8 +63,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
     if (currentSectionIndex < singleTransferSections.length) {
       // activar progress bar
       if (singleTransferSections[currentSectionIndex].id === "st1sect") {
-        window.dispatchEvent(new CustomEvent("initst1"));
         progressBar.style.display = "block";
+      }
+
+      if (singleTransferSections[currentSectionIndex].id === "st3sect") {
+        document.dispatchEvent(new CustomEvent("activenextbtn"));
       }
 
       // cambio de estado de la progress bar
@@ -98,6 +101,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   // se encarga de retroceder por las diferentes secciones de la transferencia unica
   function singleTransferback() {
+    document.dispatchEvent(new CustomEvent("disablednextbtn"));
+
     if (currentSectionIndex > 0) {
       //dispara evento para capturarlo en progressBar.js
       if (
@@ -105,6 +110,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
         (singleTransferSections[currentSectionIndex - 1].id === "st3sect")
       ) {
         window.dispatchEvent(new CustomEvent("backbuttonclicked"));
+      }
+
+      if (
+        singleTransferSections[currentSectionIndex].id === "st4sect" ||
+        singleTransferSections[currentSectionIndex].id === "st1sect"
+      ) {
+        document.dispatchEvent(new CustomEvent("activenextbtn"));
       }
 
       //actviar progress bar y nexbtn
@@ -141,6 +153,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   // se encarga de avanzar por las diferentes secciones de la transferencia multiple
   function multipleTransferNext() {
+    document.dispatchEvent(new CustomEvent("disablednextbtn"));
+
     // para no pasar de largo el indice
     if (currentSectionIndex < multipleTransferSections.length - 1) {
       currentSectionIndex++;
@@ -182,7 +196,16 @@ document.addEventListener("DOMContentLoaded", (event) => {
   }
 
   function multipleTransferback() {
+    document.dispatchEvent(new CustomEvent("disablednextbtn"));
+
     if (currentSectionIndex > 0) {
+      if (
+        singleTransferSections[currentSectionIndex].id === "st4sect" ||
+        singleTransferSections[currentSectionIndex].id === "st1sect"
+      ) {
+        document.dispatchEvent(new CustomEvent("activenextbtn"));
+      }
+
       //dispara evento para capturarlo en progressBar.js
       if (
         (multipleTransferSections[currentSectionIndex - 1].id === "mt1sect") |
@@ -252,14 +275,17 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   // desactivar boton next
   document.addEventListener("disablednextbtn", () => {
-    console.log("disabled");
     nextBtn.disabled = true;
   });
 
-  // activar boton next cuando se elige el tipo de cuenta a transferir
-  window.addEventListener("storage", function (e) {
-    if (localStorage.getItem("typeaccount")) {
-      nextBtn.disabled = false;
-    }
+  document.addEventListener("activenextbtn", () => {
+    nextBtn.disabled = false;
   });
+
+  // activar boton next cuando se elige el tipo de cuenta a transferir
+  // window.addEventListener("storage", function (e) {
+  //   if (localStorage.getItem("typeaccount")) {
+  //     nextBtn.disabled = false;
+  //   }
+  // });
 });

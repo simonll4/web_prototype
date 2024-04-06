@@ -6,3 +6,48 @@
   font-weight: 600;
   line-height: normal;
 }
+
+.whatsapp-notification {
+  background-color: #4caf50; /* Color de fondo verde */
+  color: white; /* Color de texto blanco */
+  text-align: center; /* Centrar el texto */
+  border-radius: 20px; /* Bordes muy redondeados */
+  padding: 20px; /* Más espacio alrededor del texto */
+  position: fixed; /* Posición fija en la página */
+  z-index: 1; /* Aparece por encima de otros elementos */
+  bottom: 30px; /* 30px desde la parte inferior de la página */
+  right: 30px; /* 30px desde la parte derecha de la página */
+  font-size: 20px; /* Tamaño de texto más grande */
+  transition: opacity 0.6s; /* Transición suave de la opacidad */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra alrededor de la notificación */
+}
+
+.email-notification {
+  background-color: #007bff; /* Color de fondo azul */
+  color: white; /* Color de texto blanco */
+  text-align: center; /* Centrar el texto */
+  border-radius: 20px;; /* Bordes redondeados */
+  padding: 20px; /* Espacio alrededor del texto */
+  position: fixed; /* Posición fija en la página */
+  z-index: 1; /* Aparece por encima de otros elementos */
+  bottom: 30px; /* 30px desde la parte inferior de la página */
+  right: 30px; /* 30px desde la parte derecha de la página */
+  font-size: 20px; /* Tamaño del texto */
+  transition: opacity 0.6s; /* Transición suave de la opacidad */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra alrededor de la notificación */
+}
+
+.sms-notification {
+  background-color: #9c802b; /* Color de fondo amarillo */
+  color: black; /* Color de texto negro */
+  text-align: center; /* Centrar el texto */
+  border-radius: 20px; /* Bordes redondeados */
+  padding: 20px; /* Espacio alrededor del texto */
+  position: fixed; /* Posición fija en la página */
+  z-index: 1; /* Aparece por encima de otros elementos */
+  bottom: 30px; /* 30px desde la parte inferior de la página */
+  right: 30px; /* 30px desde la parte derecha de la página */
+  font-size: 20px; /* Tamaño del texto */
+  transition: opacity 0.6s; /* Transición suave de la opacidad */
+  box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Sombra alrededor de la notificación */
+}

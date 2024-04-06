@@ -2,13 +2,17 @@ document.addEventListener("DOMContentLoaded", (event) => {
   const inputs = document.querySelectorAll(".validate-container input");
   const confirmBtn = document.querySelector("#confirmbtn");
 
-  // Agrega un controlador de eventos a cada campo de entrada
-  inputs.forEach((input) => {
+  inputs.forEach((input, index) => {
     input.addEventListener("input", () => {
       // Verifica si todos los campos de entrada tienen un valor
       let allFilled = Array.from(inputs).every((input) => input.value !== "");
       // Activa o desactiva el botón dependiendo de si todos los campos de entrada tienen un valor
       confirmBtn.disabled = !allFilled;
+
+      // Si el campo de entrada actual tiene un valor, mueve el foco al siguiente campo de entrada
+      if (input.value !== "" && index < inputs.length - 1) {
+        inputs[index + 1].focus();
+      }
     });
   });
 
@@ -17,11 +21,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
   });
 
   // vaciar los input del codigo de verificacion
-  window.parent.addEventListener("emptyinputs", function() {
+  window.parent.addEventListener("emptyinputs", function () {
     inputs.forEach((input) => {
       input.value = "";
     });
   });
-
-
 });

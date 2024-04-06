@@ -7,7 +7,7 @@
   background: #5252ff;
 }
 
-#amount {
+#transferamount {
   height: 3.375rem;
   width: 12.75rem;
   background-color: #5252ff;
@@ -16,6 +16,10 @@
   font-size: 2.813rem;
   border: none;
   outline: none;
+}
+
+#transferamount::placeholder {
+  color: white;
 }
 
 #labelamount {
@@ -88,10 +92,6 @@
   font-weight: 400;
   line-height: normal;
   margin-left: 0.5rem;
-}
-
-#amount::placeholder {
-  color: white;
 }
 
 .bg-taxes {
