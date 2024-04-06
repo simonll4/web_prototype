@@ -15,4 +15,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
   confirmBtn.addEventListener("click", () => {
     window.parent.document.dispatchEvent(new CustomEvent("verifiedidentity"));
   });
+
+  // vaciar los input del codigo de verificacion
+  window.parent.addEventListener("emptyinputs", function() {
+    inputs.forEach((input) => {
+      input.value = "";
+    });
+  });
+
+
 });

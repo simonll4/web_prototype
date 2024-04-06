@@ -53,6 +53,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   // se encarga de avanzar por las diferentes secciones de la transferencia unica
   function singleTransferNext() {
+    console.log("acaaaaaaaaaaaaaaaaaaaaa");
+
     // para no pasar de largo el indice
     if (currentSectionIndex < singleTransferSections.length - 1) {
       currentSectionIndex++;
@@ -61,6 +63,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     if (currentSectionIndex < singleTransferSections.length) {
       // activar progress bar
       if (singleTransferSections[currentSectionIndex].id === "st1sect") {
+        window.dispatchEvent(new CustomEvent("initst1"));
         progressBar.style.display = "block";
       }
 
@@ -228,5 +231,35 @@ document.addEventListener("DOMContentLoaded", (event) => {
     // Muestra la sección actual
     transferReceiptSection = document.querySelector("#transferreceipsect");
     transferReceiptSection.style.display = "block";
+  });
+
+  // se vacian todos los input del codigo de verificacion y se lanza un evento
+  // para capturarlo el valudateTransfer.js
+  const element = document.querySelector("#validatetransfersect");
+  // Crea un observador de mutaciones
+  const observer = new MutationObserver(function (mutations) {
+    mutations.forEach(function (mutation) {
+      if (mutation.attributeName === "style") {
+        let displayStyle = window.getComputedStyle(element).display;
+        window.dispatchEvent(new CustomEvent("emptyinputs"));
+      }
+    });
+  });
+  // Configura el observador para escuchar cambios en los atributos
+  observer.observe(element, {
+    attributes: true, // Esto hace que el observador escuche los cambios en los atributos
+  });
+
+  // desactivar boton next
+  document.addEventListener("disablednextbtn", () => {
+    console.log("disabled");
+    nextBtn.disabled = true;
+  });
+
+  // activar boton next cuando se elige el tipo de cuenta a transferir
+  window.addEventListener("storage", function (e) {
+    if (localStorage.getItem("typeaccount")) {
+      nextBtn.disabled = false;
+    }
   });
 });

@@ -1,3 +1,29 @@
+.logo-inicio {
+  display: flex;
+  margin-top: 6.446rem;
+  justify-content: center;
+  align-items: center;
+}
+
+/* secciones */
+
+#startsplash {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 2;
+  transition: opacity 3s;
+}
+
+#login {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 1;
+}
+
 .img-login {
   margin-top: 3.58rem;
 }
@@ -38,7 +64,7 @@
   margin-top: 1;
 }
 
-.btn-login {
+#loginbtn {
   background: #311b92;
   border-radius: 0.625rem;
   margin-top: 3.75rem;
@@ -46,6 +72,16 @@
 }
 .btn-login:hover {
   background: #311bcd;
+}
+
+.text-login {
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .text-2 {
@@ -61,4 +97,8 @@
   font-style: normal;
   font-weight: 700;
   line-height: 1.563rem;
+}
+
+.error {
+  border-bottom-color: #dc3030;
 }
